@@ -4,6 +4,7 @@ Resource        ../POM/Products_page.robot
 Resource        ../POM/Your_Cart_page.robot
 Resource        ../POM/Your_Information_page.robot
 Resource        ../POM/Overview_page.robot
+Resource    ../POM/Complete_page.robot
 
 *** Test Cases ***
 User want to buy product
@@ -25,6 +26,10 @@ User want to buy product
     And user see name product want to buy
     And user see Payment Information, Shipping Information, and Price total
     When user click Finish Button
+    Then user see Checkout: Complete! page
+    And user see complete message
+    When user click Back Home button
+    Then user see products page
 
 
 
