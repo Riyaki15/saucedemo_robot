@@ -1,6 +1,6 @@
 *** Settings ***
 Resource        ../POM/Login_Page.robot
-Resource        ../POM/Products_Page.robot
+Resource        ../POM/Products_page.robot
 Resource        ../POM/Your_Cart_page.robot
 
 *** Test Cases ***
