@@ -2,6 +2,7 @@
 Resource        ../POM/Login_Page.robot
 Resource        ../POM/Products_page.robot
 Resource        ../POM/Your_Cart_page.robot
+Resource        ../POM/Your_Information_page.robot
 
 *** Test Cases ***
 User want to buy product
@@ -14,6 +15,15 @@ User want to buy product
     And user click cart icon
     Then user see your cart page
     When user click Checkout button
+    Then user see Checkout:Your Information page
+    When user input first name
+    And user input last name
+    And user input ZIP/Postal code
+    And user click Continue button
+
+
+
+
 
 
     
