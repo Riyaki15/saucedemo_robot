@@ -10,5 +10,6 @@ User want to buy product
     And user click Login button
     Then user see products page
     When user click Add to Cart Button on Sauce Labs Backpack
+    And user click cart icon
 
     
