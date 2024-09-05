@@ -1,6 +1,7 @@
 *** Settings ***
 Resource        ../POM/Login_Page.robot
 Resource        ../POM/Products_Page.robot
+Resource        ../POM/Your_Cart_page.robot
 
 *** Test Cases ***
 User want to buy product
@@ -11,5 +12,8 @@ User want to buy product
     Then user see products page
     When user click Add to Cart Button on Sauce Labs Backpack
     And user click cart icon
+    Then user see your cart page
+    When user click Checkout button
+
 
     
