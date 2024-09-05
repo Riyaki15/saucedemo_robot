@@ -5,7 +5,7 @@ Library        SeleniumLibrary
 ${title_page_locator}    class:title
 ${title_page}            Products
 ${add_to_cart_button}    id:add-to-cart-sauce-labs-backpack
-${cart_icon}    
+${cart_icon}             css:.shopping_cart_link
 *** Keywords ***
 user see products page
     Element Should Contain
